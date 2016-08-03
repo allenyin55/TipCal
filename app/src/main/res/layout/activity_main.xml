@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.allen.myapplication.MainActivity">
+
+
+    <TextView
+        android:text="@string/billBeforeTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:id="@+id/billBeforeTip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="5"
+        android:id="@+id/billBeforeTipET"
+        android:layout_alignBaseline="@+id/billBeforeTip"
+        android:layout_alignBottom="@+id/billBeforeTip"
+        android:layout_toRightOf="@+id/billBeforeTip"
+        android:layout_toEndOf="@+id/billBeforeTip"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="@string/tipRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/billBeforeTip"
+        android:layout_toRightOf="@+id/billBeforeTipET"
+        android:layout_toEndOf="@+id/billBeforeTipET"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:id="@+id/tipRate" />
+
+    <TextView
+        android:text="@string/tipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipAmount"
+        android:layout_alignBaseline="@+id/seekBarText"
+        android:layout_alignBottom="@+id/seekBarText"
+        android:layout_alignLeft="@+id/tipRate"
+        android:layout_alignStart="@+id/tipRate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="5"
+        android:layout_alignTop="@+id/billBeforeTipET"
+        android:layout_toRightOf="@+id/tipRate"
+        android:layout_toEndOf="@+id/tipRate"
+        android:id="@+id/tipRateET" />
+
+    <CheckBox
+        android:text="@string/normalCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/goodCheckBox"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/normalCheckBox" />
+
+    <Button
+        android:text="@string/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="33dp"
+        android:id="@+id/startButton" />
+
+    <CheckBox
+        android:text="@string/badCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/badCheckBox"
+        android:layout_alignTop="@+id/normalCheckBox"
+        android:layout_alignLeft="@+id/tipAmount"
+        android:layout_alignStart="@+id/tipAmount"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:text="@string/seekBarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarText"
+        android:layout_below="@+id/billBeforeTipET"
+        android:layout_alignLeft="@+id/billBeforeTip"
+        android:layout_alignStart="@+id/billBeforeTip" />
+
+    <TextView
+        android:text="@string/billAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/billAmount"
+        android:layout_below="@+id/tipAmountET"
+        android:layout_alignLeft="@+id/checkBoxPrompt"
+        android:layout_alignStart="@+id/checkBoxPrompt" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotnessSpinner"
+        android:entries="@array/hotnessSpinner"
+        android:layout_below="@+id/tipAmountET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:text="@string/checkboxPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxPrompt"
+        android:layout_below="@+id/hotnessSpinner"
+        android:layout_alignLeft="@+id/seekBarText"
+        android:layout_alignStart="@+id/seekBarText"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/normalCheckBox"
+        android:layout_toStartOf="@+id/normalCheckBox" />
+
+    <CheckBox
+        android:text="@string/goodCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/goodCheckBox"
+        android:layout_below="@+id/checkBoxPrompt"
+        android:layout_alignLeft="@+id/checkBoxPrompt"
+        android:layout_alignStart="@+id/checkBoxPrompt" />
+
+    <TextView
+        android:text="@string/waitingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/goodCheckBox"
+        android:layout_alignLeft="@+id/goodCheckBox"
+        android:layout_alignStart="@+id/goodCheckBox" />
+
+    <Button
+        android:text="@string/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pauseButton"
+        android:layout_alignBaseline="@+id/startButton"
+        android:layout_alignBottom="@+id/startButton"
+        android:layout_toRightOf="@+id/checkBoxPrompt"
+        android:layout_toEndOf="@+id/checkBoxPrompt" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignRight="@+id/pauseButton"
+        android:layout_alignEnd="@+id/pauseButton"
+        android:id="@+id/timeWaitingCM" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetButton"
+        android:text="@string/quitButton"
+        android:layout_alignBaseline="@+id/pauseButton"
+        android:layout_alignBottom="@+id/pauseButton"
+        android:layout_alignRight="@+id/tipAmount"
+        android:layout_alignEnd="@+id/tipAmount" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="5"
+        android:id="@+id/tipAmountET"
+        android:layout_below="@+id/tipRate"
+        android:layout_toRightOf="@+id/tipAmount"
+        android:layout_toEndOf="@+id/tipAmount" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/billBeforeTipET"
+        android:layout_alignBottom="@+id/seekBarText"
+        android:layout_toLeftOf="@+id/resetButton"
+        android:layout_alignLeft="@+id/billAmountET"
+        android:layout_alignStart="@+id/billAmountET" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="5"
+        android:id="@+id/billAmountET"
+        android:layout_alignTop="@+id/billAmount"
+        android:layout_alignRight="@+id/timeWaitingCM"
+        android:layout_alignEnd="@+id/timeWaitingCM" />
+
+</RelativeLayout>

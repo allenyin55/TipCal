@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Tip Calculator</string>
+    <string name="billBeforeTip">Bill before Tip:</string>
+    <string name="billAmount">Bill Amount:</string>
+    <string name="tipAmount">Tip Amount:</string>
+    <string name="tipRate">Tip Rate:</string>
+    <string name="checkboxPrompt">Your waitress is:</string>
+    <string name="goodCheck">Friendly</string>
+    <string name= "normalCheck">Indifference</string>
+    <string name="badCheck">Obnoxious</string>
+    <string name="startButton">Start</string>
+    <string name="pauseButton">Pause</string>
+    <string name="quitButton">Reset</string>
+    <string name="seekBarText">Change tip:</string>
+    <string name="waitingTime">Time waiting for service</string>
+
+    <string-array name="hotnessSpinner">
+        <item>Is your waiter one of the followings?</item>
+        <item>Looking hot</item>
+        <item>Giving you free treat</item>
+        <item>Smelling good</item>
+    </string-array>
+
+</resources>
